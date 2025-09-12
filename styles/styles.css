@@ -26,7 +26,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 footer {
@@ -111,16 +111,15 @@ a {
   }
 }
 
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
+dl {
+  dd {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
 
-.grid_1-1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  dt {
+    font-size: 1rem;
+  }
 }
 
 .text-container {
@@ -139,6 +138,49 @@ a {
   max-width: 65ch;
 }
 
+/* Grid layouts */
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.grid_2-3 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1rem;
+}
+
+.grid_3-2 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1rem;
+}
+
+.grid_5-3 {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  gap: 1rem;
+}
+
 /*** Desktop ***/
 @media screen and (min-width: 768px) {
   .container {
@@ -151,7 +193,6 @@ a {
 
   .gallery-item {
     overflow: hidden;
-
   }
 
   .grid_1-1-1-1 {
