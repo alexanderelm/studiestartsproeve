@@ -1,0 +1,10 @@
+.bottom-section-image {
+  grid-row: 2/3;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .bottom-section-image {
+    grid-row: auto;
+  }
+}
