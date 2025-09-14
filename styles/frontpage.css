@@ -1,5 +1,5 @@
 .bottom-section-image {
-  grid-row: 2/3;
+  order: 2;
 }
 
 /* Desktop */
