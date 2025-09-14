@@ -100,6 +100,23 @@ footer {
   gap: 1rem;
 }
 
+/* Mobile only */
+@media screen and (max-width: 768px) {
+  .grid_3-2 {
+    .image-container {
+      order: -1;
+    }
+  }
+
+  .grid_5-3 {
+    gap: 2rem;
+  }
+
+  .bottom-section-image {
+    order: 2;
+  }
+}
+
 /* Desktop */
 @media screen and (min-width: 768px) {
   /* Grid layouts */
